@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Javascript Practice</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+	<link rel="stylesheet" href="">
+
+</head>
+<body>
+
+<div class="container p-5 mt-5 bg-success">
+	<div class="row w-75 m-auto">
+		<h2 class="pb-3">please type your Obtained Number</h2>
+		<input type="text" class="form-control" id="mygpa" placeholder="type your number"> <br>
+		<button class="btn-sm btn-warning my-3" onclick="ashraful()"> Click to get your Result </button>
+		<h4 id="result" class="bg-info"></h4>
+	</div>
+</div>
+
+
+<script>
+
+
+
+
+
+	function ashraful(){
+
+		var grade = document.getElementById("mygpa").value;
+
+		
+
+		if (grade<30) {
+			document.getElementById("result").innerHTML = "Shame! You Failed. Be Alert !";
+
+		}else if (grade>=30 && grade<50) {
+			document.getElementById("result").innerHTML = "Not good! You got D Grade. Be Alert !";
+		}else if (grade>=50 && grade<70) {
+			document.getElementById("result").innerHTML = "Not good! You got A- Grade. Be More Attentive !";
+		}else if (grade>=70 && grade<80) {
+			document.getElementById("result").innerHTML = "good! You got A Grade.carry on";
+		}else if (grade>=80 && grade<100) {
+			document.getElementById("result").innerHTML = "Excellent ! You got A+.";
+		}else if (grade>100) {
+			document.getElementById("result").innerHTML = "please type a valid number";
+		}
+	}
+</script>
+
+	
+
+</body>
+</html>
